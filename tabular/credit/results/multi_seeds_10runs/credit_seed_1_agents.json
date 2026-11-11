@@ -1,0 +1,38 @@
+{
+  "seed": 1,
+  "n_tasks_T": 9000,
+  "agent1_logistic_regression": {
+    "features": [
+      "PAY_2",
+      "BILL_AMT5",
+      "PAY_AMT3"
+    ],
+    "accuracy": 0.7923333333333333
+  },
+  "agent2_xgboost": {
+    "features": [
+      "SEX",
+      "EDUCATION",
+      "MARRIAGE",
+      "PAY_0",
+      "PAY_3",
+      "PAY_4",
+      "PAY_5",
+      "PAY_6",
+      "AGE",
+      "LIMIT_BAL",
+      "BILL_AMT1",
+      "BILL_AMT2",
+      "BILL_AMT3",
+      "BILL_AMT4",
+      "BILL_AMT6",
+      "PAY_AMT1",
+      "PAY_AMT2",
+      "PAY_AMT4",
+      "PAY_AMT5",
+      "PAY_AMT6"
+    ],
+    "accuracy": 0.8197777777777778
+  },
+  "note": "code agent 1 = logistic regression = paper Agent 2; code agent 2 = XGBoost = paper Agent 1. Extracted from seed_1.log of the original run (the script now also writes this file)."
+}

@@ -1,0 +1,39 @@
+{
+  "experiment": "imagenet16h",
+  "epoch": "10",
+  "model": "vgg19",
+  "participant": 48,
+  "dup": 10,
+  "agent0": "Human-48",
+  "agent1": "vgg19",
+  "eta": 0.5,
+  "seed": 42,
+  "dataset": "imagenet16h",
+  "acc_agent0": 0.765,
+  "acc_agent1": 0.86,
+  "n_steps": 2000,
+  "n_runs_requested": 100,
+  "capacities": [
+    0.2
+  ],
+  "capacity_note": "capacity[i] is Agent 0's (weaker) target share; Agent 1 (stronger) gets 1 - capacity[i]",
+  "policies": [
+    "Offline Logistic",
+    "Offline Tree",
+    "Logistic TS",
+    "Logistic Greedy",
+    "Tree TS",
+    "Tree Greedy",
+    "Random"
+  ],
+  "axes": [
+    "capacity",
+    "policy",
+    "run",
+    "step"
+  ],
+  "step_order": "arrival order; perms[run] maps step -> row of X",
+  "log_file": "logs/steptraj_imagenet16h_20260916_193104.jsonl",
+  "n_runs_completed": 100,
+  "updated": "2026-09-16T19:52:01"
+}

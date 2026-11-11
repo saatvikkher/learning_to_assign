@@ -1,0 +1,87 @@
+# Whitelist: ignore everything, then re-include only what is needed to
+# reproduce Section 4 and Appendix H.
+/*
+
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/summarize_log.py
+
+!/src/
+/src/*
+!/src/agents.py
+!/src/simulation.py
+!/src/simulation_traj.py
+!/src/plotting.py
+!/src/baselines.py
+
+!/experiments/
+/experiments/*
+!/experiments/camelyon17.py
+!/experiments/camelyon17_pca_plot.py
+!/experiments/camelyon17_results_plot.py
+!/experiments/camelyon17_eta.py
+!/experiments/camelyon17_baselines.py
+!/experiments/mmlu.py
+!/experiments/mmlu_pca_plot.py
+!/experiments/mmlu_results_plot.py
+!/experiments/imagenet16h.py
+!/experiments/imagenet16h_results_plot.py
+!/experiments/civilcomments.py
+!/experiments/civilcomments_results_plot.py
+!/experiments/step_trajectories.py
+
+# Data (large files are tracked gzipped; see README)
+!/data/
+/data/*
+!/data/mmlu_scored_progress.csv
+!/data/camelyon17_v1.0/
+/data/camelyon17_v1.0/*
+!/data/camelyon17_v1.0/features_cache.npz
+!/data/camelyon17_v1.0/metadata.csv.gz
+!/data/CivilComments/
+/data/CivilComments/*
+!/data/CivilComments/race_combined.json.gz
+!/data/CivilComments/emb_race_minilm.npz
+!/data/imagenet16h/
+/data/imagenet16h/*
+!/data/imagenet16h/Behavioral?Data/
+/data/imagenet16h/Behavioral?Data/*
+!/data/imagenet16h/Behavioral?Data/Preprocessed/
+/data/imagenet16h/Behavioral?Data/Preprocessed/*
+!/data/imagenet16h/Behavioral?Data/Preprocessed/human_only_classification_6per_img_preprocessed.csv.gz
+!/data/imagenet16h/Machine?Classifier?Predictions/
+/data/imagenet16h/Machine?Classifier?Predictions/*
+!/data/imagenet16h/Machine?Classifier?Predictions/Preprocessed/
+/data/imagenet16h/Machine?Classifier?Predictions/Preprocessed/*
+!/data/imagenet16h/Machine?Classifier?Predictions/Preprocessed/hai_epoch10_model_preds_max_unnormalized_preprocessed.csv.gz
+
+# Logs behind the paper figures/tables
+!/logs/
+/logs/*
+!/logs/camelyon17_20260502_131702.jsonl
+!/logs/mmlu_20260502_025211.jsonl
+!/logs/imagenet16h_ep10_vgg19_p48_20260502_023209.jsonl
+!/logs/civilcomments_race_20260916_192050.jsonl
+!/logs/eta_sensitivity_camelyon17_20260504_142927.jsonl
+!/logs/camelyon17_baselines_eta0_20261108_161454.jsonl
+!/logs/camelyon17_baselines_baselines_20261109_142730.jsonl
+!/logs/camelyon17_baselines_split_20261108_161514.jsonl
+
+# Camelyon17 baseline comparison: per-step assignments and final table values
+!/results/
+/results/*
+!/results/camelyon17/
+
+# Per-step assignments at alpha_1 = 0.8 (capacity-enforcement table)
+!/trajectories/
+/trajectories/*
+!/trajectories/step_actions/
+
+# Collaborator package for the tabular datasets (self-contained)
+!/tabular/
+
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/

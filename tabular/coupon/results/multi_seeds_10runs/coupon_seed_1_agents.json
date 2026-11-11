@@ -1,0 +1,39 @@
+{
+  "seed": 1,
+  "n_tasks_T": 3624,
+  "agent1_logistic_regression": {
+    "features": [
+      "RestaurantLessThan20",
+      "education",
+      "direction_same",
+      "maritalStatus"
+    ],
+    "accuracy": 0.5355960264900662
+  },
+  "agent2_xgboost": {
+    "features": [
+      "destination",
+      "passanger",
+      "weather",
+      "temperature",
+      "time",
+      "coupon",
+      "expiration",
+      "gender",
+      "age",
+      "has_children",
+      "occupation",
+      "income",
+      "Bar",
+      "CoffeeHouse",
+      "CarryAway",
+      "Restaurant20To50",
+      "toCoupon_GEQ5min",
+      "toCoupon_GEQ15min",
+      "toCoupon_GEQ25min",
+      "direction_opp"
+    ],
+    "accuracy": 0.7268211920529801
+  },
+  "note": "code agent 1 = logistic regression = paper Agent 2; code agent 2 = XGBoost = paper Agent 1. Extracted from seed_1.log of the original run (the script now also writes this file)."
+}

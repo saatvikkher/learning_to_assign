@@ -1,0 +1,5 @@
+Policy,Median conv.,Mean conv.,Mean conv. (% T)
+Logistic TS,158,156,1.26%
+Tree TS,153,156,1.26%
+Logistic Greedy,132,128,1.04%
+Tree Greedy,96,103,0.84%

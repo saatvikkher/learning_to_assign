@@ -1,0 +1,44 @@
+{
+  "experiment": "civilcomments",
+  "split": "race",
+  "pooled": true,
+  "pca_dim": 10,
+  "balance_seed": 0,
+  "model_a": "meta_llama-7b",
+  "model_b": "together_redpajama-incite-instruct-3b-v1",
+  "agent0": "together_redpajama-incite-instruct-3b-v1",
+  "agent1": "meta_llama-7b",
+  "eta": 0.5,
+  "seed": 42,
+  "dataset": "civilcomments",
+  "acc_agent0": 0.5554421768707483,
+  "acc_agent1": 0.5819727891156462,
+  "n_steps": 5880,
+  "n_runs_requested": 100,
+  "capacities": [
+    0.2
+  ],
+  "capacity_note": "capacity[i] is Agent 0's (weaker) target share; Agent 1 (stronger) gets 1 - capacity[i]",
+  "policies": [
+    "Offline Logistic",
+    "Offline Tree",
+    "Logistic TS",
+    "Logistic Greedy",
+    "Tree TS",
+    "Tree Greedy",
+    "Random"
+  ],
+  "axes": [
+    "capacity",
+    "policy",
+    "run",
+    "step"
+  ],
+  "step_order": "arrival order; perms[run] maps step -> row of X",
+  "log_file": "logs/steptraj_civilcomments_20260921_134638.jsonl",
+  "extra_arrays": [
+    "demographic"
+  ],
+  "n_runs_completed": 100,
+  "updated": "2026-09-21T14:01:32"
+}

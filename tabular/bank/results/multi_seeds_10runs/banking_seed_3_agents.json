@@ -1,0 +1,30 @@
+{
+  "seed": 3,
+  "n_tasks_T": 12357,
+  "agent1_logistic_regression": {
+    "features": [
+      "marital",
+      "education",
+      "age"
+    ],
+    "accuracy": 0.5674516468398478
+  },
+  "agent2_xgboost": {
+    "features": [
+      "job",
+      "default",
+      "housing",
+      "loan",
+      "contact",
+      "month",
+      "poutcome",
+      "day_of_week",
+      "duration",
+      "campaign",
+      "pdays",
+      "previous"
+    ],
+    "accuracy": 0.9127619972485231
+  },
+  "note": "code agent 1 = logistic regression = paper Agent 2; code agent 2 = XGBoost = paper Agent 1. Extracted from seed_3.log of the original run (the script now also writes this file)."
+}

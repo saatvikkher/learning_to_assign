@@ -1,0 +1,38 @@
+{
+  "experiment": "camelyon17",
+  "center_a": 3,
+  "center_b": 4,
+  "ood_center": 1,
+  "agent0": "hospital_3",
+  "agent1": "hospital_4",
+  "eta": 0.5,
+  "seed": 42,
+  "dataset": "camelyon17",
+  "acc_agent0": 0.6915,
+  "acc_agent1": 0.6975,
+  "n_steps": 2000,
+  "n_runs_requested": 100,
+  "capacities": [
+    0.2
+  ],
+  "capacity_note": "capacity[i] is Agent 0's (weaker) target share; Agent 1 (stronger) gets 1 - capacity[i]",
+  "policies": [
+    "Offline Logistic",
+    "Offline Tree",
+    "Logistic TS",
+    "Logistic Greedy",
+    "Tree TS",
+    "Tree Greedy",
+    "Random"
+  ],
+  "axes": [
+    "capacity",
+    "policy",
+    "run",
+    "step"
+  ],
+  "step_order": "arrival order; perms[run] maps step -> row of X",
+  "log_file": "logs/steptraj_camelyon17_20260916_193105.jsonl",
+  "n_runs_completed": 100,
+  "updated": "2026-09-16T19:54:36"
+}

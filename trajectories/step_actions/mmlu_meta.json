@@ -1,0 +1,39 @@
+{
+  "experiment": "mmlu",
+  "model_a": "cohere/small-20220720",
+  "model_b": "meta/llama-13b",
+  "cat1": "college_chemistry",
+  "cat2": "us_foreign_policy",
+  "agent0": "cohere/small-20220720",
+  "agent1": "meta/llama-13b",
+  "eta": 0.5,
+  "seed": 42,
+  "dataset": "mmlu",
+  "acc_agent0": 0.3225806451612903,
+  "acc_agent1": 0.4700460829493088,
+  "n_steps": 217,
+  "n_runs_requested": 100,
+  "capacities": [
+    0.2
+  ],
+  "capacity_note": "capacity[i] is Agent 0's (weaker) target share; Agent 1 (stronger) gets 1 - capacity[i]",
+  "policies": [
+    "Offline Logistic",
+    "Offline Tree",
+    "Logistic TS",
+    "Logistic Greedy",
+    "Tree TS",
+    "Tree Greedy",
+    "Random"
+  ],
+  "axes": [
+    "capacity",
+    "policy",
+    "run",
+    "step"
+  ],
+  "step_order": "arrival order; perms[run] maps step -> row of X",
+  "log_file": "logs/steptraj_mmlu_20260916_193113.jsonl",
+  "n_runs_completed": 100,
+  "updated": "2026-09-16T19:33:59"
+}

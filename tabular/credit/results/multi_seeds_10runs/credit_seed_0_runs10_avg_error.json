@@ -1,0 +1,26 @@
+{
+  "Offline Logistic": [
+    0.18922222222222218
+  ],
+  "Offline Tree": [
+    0.18222222222222217
+  ],
+  "Offline Logistic Un": [
+    0.1784444444444444
+  ],
+  "Offline Tree Un": [
+    0.1801111111111111
+  ],
+  "Logistic TS": [
+    0.19095555555555543
+  ],
+  "Logistic greedy": [
+    0.1895
+  ],
+  "Tree TS": [
+    0.1905555555555557
+  ],
+  "Tree greedy": [
+    0.1884
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "runs_completed": 10,
+  "capacity_agent_1": 0.5,
+  "capacity_agent_2": 0.5,
+  "Logistic greedy": {
+    "avg_error": 0.2784089989479648
+  },
+  "Tree greedy": {
+    "avg_error": 0.2784089989479648
+  }
+}

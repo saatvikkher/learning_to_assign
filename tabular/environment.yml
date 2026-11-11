@@ -1,0 +1,16 @@
+name: capacity_bandits
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=2.4
+  - pandas=3.0
+  - scipy=1.17
+  - scikit-learn=1.8
+  - xgboost=3.2
+  - matplotlib=3.10
+  - xlrd=2.0          # reads the Credit .xls file
+  - jupyter
+  - pip
+  - pip:
+      - ortools==9.15.6755   # mini-batch scripts only (min-cost max-flow)
