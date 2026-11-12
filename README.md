@@ -41,7 +41,7 @@ The commands below regenerate each item from the saved results: logs in `logs/` 
 | Table 6: capacity enforcement (all datasets) | `tabular` § 9; other datasets: `trajectories/step_actions/` |
 | Table 7: feature-split robustness (Bank) | `tabular` § 10 |
 | Tables 8, 9: plug-in and DMD baselines (Bank) | `tabular` § 11 |
-| Tables 10, 11: plug-in and DMD baselines (Camelyon17) | `python -m experiments.camelyon17_baselines --plot logs/camelyon17_baselines_baselines_20261109_142730.jsonl`; max final deviation: `results/camelyon17/` |
+| Tables 10, 11: plug-in and DMD baselines (Camelyon17) | `python -m experiments.camelyon17_deviation_table` (error rate and max deviation over 200-task windows, from `results/camelyon17/`) |
 | Table 12: offline router (Bank) | `tabular` § 12 |
 | Table 13: offline router (Camelyon17) | `python -m experiments.camelyon17_baselines --plot logs/camelyon17_baselines_split_20261108_161514.jsonl` |
 
@@ -63,6 +63,7 @@ OMP_NUM_THREADS=1 python -m experiments.civilcomments --dataset race --pooled --
 OMP_NUM_THREADS=1 python -m experiments.camelyon17_baselines --setup eta0 --workers 10        # Table 4
 OMP_NUM_THREADS=1 python -m experiments.camelyon17_baselines --setup baselines --workers 10 \
     --save-actions results/camelyon17                                                         # Tables 10, 11
+python -m experiments.camelyon17_deviation_table                                            # Tables 10, 11 from the saved actions
 OMP_NUM_THREADS=1 python -m experiments.camelyon17_baselines --setup split --workers 10       # Table 13
 
 # Table 6: per-step assignments at α₁ = 0.8, for d in camelyon17, mmlu, imagenet16h, civilcomments

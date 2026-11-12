@@ -22,6 +22,7 @@
 !/experiments/camelyon17_results_plot.py
 !/experiments/camelyon17_eta.py
 !/experiments/camelyon17_baselines.py
+!/experiments/camelyon17_deviation_table.py
 !/experiments/mmlu.py
 !/experiments/mmlu_pca_plot.py
 !/experiments/mmlu_results_plot.py

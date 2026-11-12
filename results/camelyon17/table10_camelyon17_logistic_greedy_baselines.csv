@@ -1,0 +1,9 @@
+,method,α₁=0.2,α₁=0.4,α₁=0.5,α₁=0.6,α₁=0.8
+"Error rate, % (SE)","Ours, η=√(A/T)",26.11 (1.09),21.19 (0.16)*,18.39 (0.13),17.63 (0.23),25.09 (0.16)
+"Error rate, % (SE)",Online plug-in,24.91 (0.54)*,22.92 (2.20),17.67 (0.32)*,16.62 (0.14)*,23.11 (0.50)*
+"Error rate, % (SE)","DMD, Euclidean",27.28 (1.44),23.58 (2.23),18.38 (0.16),17.36 (0.24),25.47 (0.16)
+"Error rate, % (SE)","DMD, entropic",27.37 (1.28),26.00 (2.78),19.38 (1.01),18.04 (0.53),25.02 (0.30)
+Max deviation over 200-task windows,"Ours, η=√(A/T)",0.040*,0.055*,0.050*,0.045*,0.045*
+Max deviation over 200-task windows,Online plug-in,0.210,0.285,0.155,0.135,0.375
+Max deviation over 200-task windows,"DMD, Euclidean",0.120,0.115,0.090,0.055,0.155
+Max deviation over 200-task windows,"DMD, entropic",0.225,0.355,0.265,0.235,0.310

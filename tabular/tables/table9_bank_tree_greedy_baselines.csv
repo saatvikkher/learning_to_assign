@@ -1,11 +1,9 @@
 ,method,α₁=0.2,α₁=0.4,α₁=0.5,α₁=0.6,α₁=0.8
-"Error rate, % (SE)","Ours, η=0.5",31.32 (0.07),21.01 (0.10),17.11 (0.06),13.83 (0.06),10.61 (0.07)
 "Error rate, % (SE)","Ours, η=√(A/T)",28.35 (0.04),14.23 (0.07)*,11.75 (0.08)*,10.79 (0.08),9.21 (0.04)
 "Error rate, % (SE)",Online plug-in,25.35 (0.51)*,15.08 (0.19),12.25 (0.12),11.20 (0.09),9.40 (0.09)
 "Error rate, % (SE)","DMD, Euclidean",28.86 (0.03),14.45 (0.05),11.93 (0.09),10.78 (0.08),9.23 (0.04)
 "Error rate, % (SE)","DMD, entropic",29.47 (0.04),14.81 (0.05),11.88 (0.08),10.77 (0.09)*,9.19 (0.05)*
-Max final deviation,"Ours, η=0.5",0.0002,0.0001,0.0001,0.0000,0.0001
-Max final deviation,"Ours, η=√(A/T)",0.0054,0.0032,0.0024,0.0018,0.0018
-Max final deviation,Online plug-in,0.0734,0.0336,0.0564,0.0974,0.0800
-Max final deviation,"DMD, Euclidean",0.0049,0.0039,0.0028,0.0024,0.0022
-Max final deviation,"DMD, entropic",0.0052,0.0081,0.0050,0.0033,0.0010
+Max deviation over 200-task windows,"Ours, η=√(A/T)",0.045*,0.065*,0.065*,0.075*,0.070*
+Max deviation over 200-task windows,Online plug-in,0.175,0.185,0.230,0.290,0.360
+Max deviation over 200-task windows,"DMD, Euclidean",0.200,0.260,0.180,0.160,0.165
+Max deviation over 200-task windows,"DMD, entropic",0.200,0.400,0.350,0.220,0.270

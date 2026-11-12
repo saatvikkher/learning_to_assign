@@ -47,7 +47,7 @@ jupyter notebook reproduce_figures_tables.ipynb   # then "Run All" (about 10 sec
 | Table 5 and text of App. H.10 (Bank capacity convergence) | 8 | `bank/code/main_100runs_step_level.py` | `bank/results/step_level_100runs/*_step_actions_packed.npz` |
 | Table 6 (tabular rows): final capacity deviation | 9 | `<ds>/code/main_100runs_step_level.py` | `<ds>/results/step_level_100runs/*_step_actions_packed.npz` |
 | Table 7 and text of App. H.11: feature-split robustness | 10 | `bank/code/feature_split_sweep.py` | `bank/results/feature_split_sweep/` |
-| Tables 8, 9: plug-in and DMD baselines (Bank) | 11 | `bank/code/main_100runs_*.py` (η = 0.5, first 10 streams), `bank/code/eta_sqrtAT_10runs.py`, `bank/code/plugin_10runs.py`, `bank/code/dmd_10runs.py` | `bank/results/{main_100runs, step_level_100runs, eta_sqrtAT_10runs, plugin_10runs, dmd_10runs}/` |
+| Tables 8, 9: plug-in and DMD baselines (Bank); max deviation over 200-task windows | 11 | `bank/code/eta_sqrtAT_10runs.py`, `bank/code/plugin_10runs.py`, `bank/code/dmd_10runs.py` | `bank/results/{eta_sqrtAT_10runs, plugin_10runs, dmd_10runs}/` |
 | Table 12: offline router, half split (Bank) | 12 | `bank/code/half_split_offline_router_10runs.py` | `bank/results/half_split_offline_router_10runs/` |
 
 Numbering follows the current paper draft. All values produced by the notebook match the paper.
