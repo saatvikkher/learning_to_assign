@@ -29,6 +29,7 @@ The commands below regenerate each item from the saved results: logs in `logs/` 
 | Fig. 4, Fig. 8: mini-batch (Bank) | `tabular` § 5 |
 | Fig. 5a–c: Cardio, Coupon, Credit | `tabular` § 2 |
 | Fig. 5d: Civil | `python -m experiments.civilcomments_results_plot --log-file logs/civilcomments_race_20260916_192050.jsonl` |
+| Fig. 6a, 6b: multi-agent MMLU (3 and 5 agents) | `python -m experiments.mmlu_multiagent --plot --log-file logs/mmlu_3agent_20261112_124705.jsonl` (6a), `... --log-file logs/mmlu_5agent_20261112_124710.jsonl` (6b) |
 | Fig. 7: unconstrained free agent (Bank) | `tabular` § 6 |
 | Fig. 9: effect of η (Camelyon17) | `python -m experiments.camelyon17_eta --plot --log-file logs/eta_sensitivity_camelyon17_20260504_142927.jsonl` |
 | Fig. 10: synthetic capacity validation | `tabular` § 7 |
@@ -53,6 +54,8 @@ python -m experiments.camelyon17                                   # Fig. 2b
 python -m experiments.camelyon17_eta                               # Fig. 9
 python -m experiments.mmlu                                         # Fig. 3b
 python -m experiments.imagenet16h --model vgg19 --participant 48   # Fig. 3c
+python -m experiments.mmlu_multiagent --setting 3agent --workers 25   # Fig. 6a (25 task streams)
+python -m experiments.mmlu_multiagent --setting 5agent --workers 25   # Fig. 6b
 OMP_NUM_THREADS=1 python -m experiments.civilcomments --dataset race --pooled --workers 40 \
     --policies "Logistic TS,Logistic Greedy,Tree TS,Tree Greedy,Random"     # Fig. 5d (~20 min with 40 workers)
 
